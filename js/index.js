@@ -51,6 +51,23 @@ multipleSections[3].textContent = 'Features';
 multipleSections[4].textContent = 'About';
 multipleSections[5].textContent = 'Contact';
 
+const greenNav = document.querySelector('nav');
+greenNav.style.backgroundColor = 'green';
+
+const lastNav = document.createElement('nav');
+lastNav.textContent = 'Past';
+lastNav.href = '#';
+
+
+
+document.querySelector('nav').appendChild(lastNav);
+
+const extNav = document.createElement('nav');
+extNav.textContent = 'Future';
+extNav.href = '#';
+document.querySelector('nav').prepend(extNav);
+
+
 const img = document.querySelector('#logo-img');
 img.src = 'img/logo.png';
 
